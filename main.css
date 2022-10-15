@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: 'Inconsolata', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inconsolata', sans-serif;
+  color: var(--primary);
+  font-weight: 400;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  background-color: var(--background);
+  color: var(--primary);
+  padding: 5px;
+  font-family: 'Inconsolata', sans-serif;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.light {
+  --background: #00ff41;
+  --primary: #0d0208;
+  --secondary: #003b00;
+  --accent: #008f11;
+}
+
+.dark {
+  --background: #0d0208;
+  --primary: #00ff41;
+  --secondary: #008f11;
+  --accent: #003b00;
+}
